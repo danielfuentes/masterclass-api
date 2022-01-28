@@ -1,0 +1,17 @@
+.fuente{
+    font-family: 'Rajdhani', sans-serif !important;
+    font-weight: bold;
+    text-align: center;
+}
+img{
+    width: 100%;
+    display: block;
+}
+#logo{
+    width: 15%;
+}
+.imagen{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}

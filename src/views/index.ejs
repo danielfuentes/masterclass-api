@@ -26,19 +26,22 @@
         </header>
         <h1 class="fuente">Personas que sentimos que el mundo de hoy es digital</h1>
         <section class="row">
-            <article class="col-12 ">
+            <% usuarios.forEach(usuario => {%>
+            <article class="col-12 col-md-6 col-lg-3">
                 <div class="card">
                     <figure class="imagen"> 
-                        <img src="https://media3.giphy.com/media/y5OffROvBod0s/200.webp?cid=ecf05e47rsgygstwlxkiud6c87x2hw211zzbaq7ru1iqhm3e&rid=200.webp&ct=g" class="card-img-top" alt="Daniel">
+                        <img src="<%=usuario.picture.large %>" class="card-img-top" alt="<%=usuario.name.first%>>">
                     </figure>
                     <div class="card-body text-center">
-                        <h4 class="card-title">Ángel Daniel Fuentes</h4>
-                        <h5 class="card-title">Venezuela</h5>
-                        <p class="card-text">Me dedico a investigar sobre las nuevas tecnologías para luego transmitirlas a otras generaciones.</p>
+                        <h4 class="card-title"><%=usuario.name.first %> <%=usuario.name.last %> </h4>
+                        <h5 class="card-title"><%=usuario.location.country %></h5>
+                        
                         <a href="#" class="btn btn-danger">Mas información</a>
                     </div>
                 </div>
             </article>
+                
+            <% }); %>
         </section>
 
     </div>
